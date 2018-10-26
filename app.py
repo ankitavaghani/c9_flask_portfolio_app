@@ -18,7 +18,7 @@ def profile(name):
 	return render_template('index.html', name=name)
 
 @app.route('/sweets')
-def home_page():
+def sweets():
 	return render_template('sweets.html')
 
 
