@@ -1,316 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "index.html" %} 
 
-<head>
-{% block head %}
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-   
+{% block title %}Python Apps{% endblock %}
 
-    <title>{% block title %}About{% endblock %}</title>
+{% block content %}
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
-
-
-    <!-- Bootstrap Core CSS -->
-    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-
-    <!-- Theme CSS -->
-    <link href="/static/css/freelancer.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top" class="index">
-<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> 
-                </button>
-                <a class="navbar-brand" href="#page-top">Hungry Food World</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/sweets">Sweets</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    
-{% endblock %}
-    <!-- Header -->
-    <header>
-    {% block content%}
-        <div class="container" id="maincontent" tabindex="-1">
+   <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="https://jetfuelcatering.com/wp-content/uploads/2018/08/Indian-Food-PNG-HD.png" alt="">                                                    
+                    <img class="img-responsive" src="/static/img/learn_python.jpeg" alt="">
                     <div class="intro-text">
-                        <h1 class="name">Hungry Food World</h1>
+                        <h1 class="name">Simple Python Apps</h1>
                         <hr class="star-light">
-                        <span class="skills">BEST OF THE BEST</span>
+                        <span class="skills">Let's Play!</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
+
+
+
+            <!-- Portfolio Grid Section -->
     
     <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Exotic Food</h2>
+                    <h2>Simple Python Apps</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.chesstastic.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+                <h1>Addition</h1>
+                    <a href="/add_numbers" target="_blank" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://www.bikanervalaonline.co.nz/wp-content/uploads/2016/05/Samosa.jpg" target="_blank" class="img-responsive" alt="Chesstastic">
+                        <img src="/static/img/add_preview.png" target="_blank" class="img-responsive" alt="Cabin">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.cleverprogrammer.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+                <h1>Shopping List</h1>
+                    <a href="/shopping_list" target="_blank" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://mayuriseattle.com/bakery/IMAGES/MENU/Chaats/Pani_Puri.png" class="img-responsive" alt="Slice of cake">
+                        <img src="/static/img/shopping_preview.png" class="img-responsive" alt="Slice of cake">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ" target="_blank" class="portfolio-link" data-toggle="modal">
+                <h1>Current Time</h1>
+                    <a href="/time" target="_blank" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="https://mbtskoudsalg.com/images/grilled-sandwich-png-5.png" class="img-responsive" alt="Circus tent">
+                        <img src="/static/img/time_preview.png" class="img-responsive" alt="Circus tent">
                     </a>
                 </div>      
             </div>
-            
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.chesstastic.com/" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="http://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4115.png" target="_blank" class="img-responsive" alt="Chesstastic">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.cleverprogrammer.com/" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://international.gitsfood.com/media/catalog/product/cache/image/700x560/e9c3970ab036de70892d86c6d221abfe/p/l/plain_dosa_2.jpg" class="img-responsive" alt="Slice of cake">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="http://www.milanfoods.in/wp-content/uploads/2017/08/dabeli.png" class="img-responsive" alt="Circus tent">
-                    </a>
-                </div>      
-            </div>
-            
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.chesstastic.com/" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://4.imimg.com/data4/FT/AG/MY-8467331/gathiya-500x500-500x500.png" target="_blank" class="img-responsive" alt="Chesstastic">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.cleverprogrammer.com/" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="http://www.pngpix.com/wp-content/uploads/2016/08/PNGPIX-COM-Pizza-PNG-Transparent-Image-500x389.png" class="img-responsive" alt="Slice of cake">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="http://www.shalinivyas.com/wp-content/uploads/2016/03/Bhelpuri-Recipe-Sevpuri-chaat.jpg" class="img-responsive" alt="Circus tent">
-                    </a>
-                </div>      
-            </div>
-            
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.chesstastic.com/" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="http://aratislife.com/wp-content/uploads/2017/08/indian-mumbai-street-food3.png" target="_blank" class="img-responsive" alt="Chesstastic">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.cleverprogrammer.com/" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://i.pinimg.com/originals/98/e8/4d/98e84d9c774ac055ee7cee99f9cda6ca.png" class="img-responsive" alt="Slice of cake">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="http://pluspng.com/img-png/idli-png--1200.png" class="img-responsive" alt="Circus tent">
-                    </a>
-                </div> 
-     
-            </div>
-            
-            
         </div>
     </section>
 
-    <!-- About Section -->
+         <!-- About Section -->
     <section class="success" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2></h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Hungry Food World is one of the oldest and prominent names in South Gujarat for traditional Sweets and Namkeens. Founded by Miss Ankita Vaghani, a exotic sweets & snack shop. Hungry Food Word has now become a renowned name not only for Sweets & Namkeens but also in Catering with serving quality food and beverages.
-</p>
-                </div>
                 <div class="col-lg-4">
-                    <p>We deliver tasty & healthy sweets in India online also deliver dairy products, namkeen & many more in India with being rated as the best manufacturers for sweets, order fresh pure online Indian sweets for festivals & weddings. we have a great delivery network across India. We are leading online Sweets brand in India. </p>
+                    <p>The languages I work with include: HTML, CSS & Python. I work with the Flask Framework for Python development. If you are a non technical person who would like control over your website then I can create a Wordpress website for you. Simplicity, creativity and clarity are the core principles behind my work.</p>
                 </div>
             </div>
         </div>
     </section>
 
-{% endblock %}
-
-    {% block footer %}
-    <!-- Footer -->
-    <footer class="text-center">
-    
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>South Gujarat,
-                            <br>India</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" target="_blank" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline" target="_blank"><span class="sr-only">YouTube</span><i class="fa fa-fw fa-youtube"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline" target="_blank"><span class="sr-only">YouTube</span><i class="fa fa-fw fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Hungry Food World - 2018 - Created by Clever Programmer
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endblock %}
-    </footer>
- 
-
-</body>
-
-
-</html>
-
-   
+{% endblock%}
