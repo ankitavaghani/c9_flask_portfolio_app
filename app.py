@@ -17,6 +17,10 @@ def home_page():
 def profile(name):
 	return render_template('index.html', name=name)
 
+@app.route('/sweets')
+def home_page():
+	return render_template('sweets.html')
+
 
 @app.route('/add_numbers', methods=['GET','POST'])
 def add_numbers_post():
